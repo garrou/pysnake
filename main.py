@@ -2,18 +2,15 @@ import pygame
 import sys
 import random
 
-# Constants
 WIDTH, HEIGHT = 600, 400
 GRID_SIZE = 20
 FPS = 10
 
-# Colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 
-# Snake class
 class Snake:
     def __init__(self):
         self.length = 1
@@ -47,7 +44,6 @@ class Snake:
             pygame.draw.rect(surface, self.head_color if i == 0 else self.color, (p[0], p[1], GRID_SIZE, GRID_SIZE))
 
 
-# Food class
 class Food:
     def __init__(self):
         self.position = (0, 0)
